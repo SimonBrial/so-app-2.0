@@ -2,8 +2,8 @@ import {
   MessagesSquare,
   ChartPie,
   Database,
-  Settings,
-  User,
+  House,
+  Bolt,
 } from "lucide-react";
 import IconNavbar from "./icon-navbar";
 import type { IconNavbarProps } from "../../types/interface";
@@ -12,9 +12,9 @@ import { Separator } from "../ui/separator";
 export default function Navbar() {
   const dirObj: IconNavbarProps[] = [
     {
-      icon: User,
+      icon: House,
       dir: "/",
-      label: "Usuario",
+      label: "Home",
     },
     {
       icon: ChartPie,
@@ -32,13 +32,13 @@ export default function Navbar() {
       label: "Base de Datos",
     },
     {
-      icon: Settings,
+      icon: Bolt,
       dir: "/ajustes",
       label: "Configuración",
     },
   ];
   return (
-    <div className="flex flex-col gap-4 items-center rounded-lg bg-container h-full px-3 py-[3rem] border- border--red-500 w--1/6">
+    <div className="flex flex-col gap-4 items-center rounded-lg bg-container dark:bg-container-dark h-full px-3 py-[3rem] border- border--red-500 w--1/6">
       {dirObj.map((item, index) => (
         <>
           <IconNavbar key={index} {...item} />
