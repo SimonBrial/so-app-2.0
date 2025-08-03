@@ -11,4 +11,16 @@ interface ThemeProviderState {
   setTheme: (theme: Theme) => void;
 }
 
-export type { ThemeProviderProps, ThemeProviderState };
+interface IconNavbarProps {
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  dir: string;
+}
+
+interface HeaderSectionProps {
+  icon: React.ComponentType<{ className?: string }>;
+  titleSection: string;
+  title: string;
+}
+
+export type { ThemeProviderProps, ThemeProviderState, IconNavbarProps, HeaderSectionProps };
