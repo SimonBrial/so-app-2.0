@@ -1,13 +1,7 @@
-import {
-  MessagesSquare,
-  ChartPie,
-  Database,
-  House,
-  Bolt,
-} from "lucide-react";
+import { MessagesSquare, ChartPie, Database, House, Bolt } from "lucide-react";
 import IconNavbar from "./icon-navbar";
 import type { IconNavbarProps } from "../../types/interface";
-import { Separator } from "../ui/separator";
+import SeparatorCustom from "../separator-custom";
 
 export default function Navbar() {
   const dirObj: IconNavbarProps[] = [
@@ -38,14 +32,12 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="flex flex-col gap-4 items-center rounded-lg bg-container dark:bg-container-dark h-full px-3 py-[3rem] border- border--red-500 w--1/6">
+    <div className="flex flex-col gap-2 items-center rounded-lg bg-container dark:bg-container-dark h-full px-3 py-[3rem] border- border--red-500 w--1/6">
       {dirObj.map((item, index) => (
-        <>
-          <IconNavbar key={index} {...item} />
-          {
-            index === 0 && <Separator />
-          }
-        </>
+        <div key={index}>
+          <IconNavbar {...item} />
+          {index === 0 && <SeparatorCustom />}
+        </div>
       ))}
     </div>
   );

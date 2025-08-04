@@ -9,12 +9,15 @@ import {
 import type { HeaderSectionProps } from "../types/interface";
 
 export default function HeaderSection({
-  titleSection,
+  fivethTitle,
+  fourthTitle,
+  thirdTitle,
   title,
+  titleSection,
   ...props
 }: HeaderSectionProps) {
   return (
-    <Breadcrumb className="p-2">
+    <Breadcrumb className="p-2 cursor-default">
       <BreadcrumbList className="text-xl text-light-text dark:text-white">
         <BreadcrumbItem>
           <props.icon className="size-[50px] text-branding-3 dark:text-branding-2 hover:text-branding-2 transition-all" />
@@ -30,6 +33,36 @@ export default function HeaderSection({
         <BreadcrumbItem>
           <BreadcrumbPage className="text-xl text-light-text dark:text-white">
             {titleSection}
+          </BreadcrumbPage>
+        </BreadcrumbItem>
+        {thirdTitle && (
+          <BreadcrumbSeparator>
+            <SlashIcon />
+          </BreadcrumbSeparator>
+        )}
+        <BreadcrumbItem>
+          <BreadcrumbPage className="text-xl text-light-text dark:text-white">
+            {thirdTitle}
+          </BreadcrumbPage>
+        </BreadcrumbItem>
+        {fourthTitle && (
+          <BreadcrumbSeparator>
+            <SlashIcon />
+          </BreadcrumbSeparator>
+        )}
+        <BreadcrumbItem>
+          <BreadcrumbPage className="text-xl text-light-text dark:text-white">
+            {fourthTitle}
+          </BreadcrumbPage>
+        </BreadcrumbItem>
+        {fivethTitle && (
+          <BreadcrumbSeparator>
+            <SlashIcon />
+          </BreadcrumbSeparator>
+        )}
+        <BreadcrumbItem>
+          <BreadcrumbPage className="text-xl text-light-text dark:text-white">
+            {fivethTitle}
           </BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>

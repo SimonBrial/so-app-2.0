@@ -21,6 +21,10 @@ interface HeaderSectionProps {
   icon: React.ComponentType<{ className?: string }>;
   titleSection: string;
   title: string;
+  subTitle: string;
+  thirdTitle?: string;
+  fourthTitle?: string;
+  fivethTitle?: string;
 }
 
 export type { ThemeProviderProps, ThemeProviderState, IconNavbarProps, HeaderSectionProps };

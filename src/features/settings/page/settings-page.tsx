@@ -1,14 +1,15 @@
-
 import { Bolt } from "lucide-react";
 import HeaderSection from "../../../components/header-section";
 import ContainerLayout from "../../../components/layout/container-layout";
-import { Separator } from "../../../components/ui/separator";
+import { ModeToggle } from "../../theme/mode-toggle";
+import SeparatorCustom from "../../../components/separator-custom";
 
 export default function SettingsPage() {
   return (
     <ContainerLayout>
       <HeaderSection icon={Bolt} title="Ajustes" titleSection="Perfil" />
-      <Separator className="my-2.5" />
+      <SeparatorCustom />
+      <ModeToggle />
     </ContainerLayout>
   );
 }

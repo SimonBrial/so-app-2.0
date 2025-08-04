@@ -16,7 +16,10 @@
   --color-branding-3: oklab(32.842% -0.02085 -0.14688);
   --color-branding-4: oklab(57.782% 0.20764 0.11171);
   --color-container: #f8f8f8;
+  --color-container-small-dark: #242525;
   --color-container-dark: #111111;
+  --color-container-border: #cdcdcd;
+  --color-container-border-dark: #272727;
   --color-light-text: #696969;
   --inset-shadow-custom: inset 4px 4px 4px -3px rgba(0, 0, 0, 0.25);
   --color-iconBackground: #d6dee0;
