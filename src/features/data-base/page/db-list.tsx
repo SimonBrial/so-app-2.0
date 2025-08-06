@@ -9,6 +9,7 @@ import { Input } from "../../../components/ui/input";
 import { Button } from "../../../components/ui/button";
 import SeparatorCustom from "../../../components/separator-custom";
 import { Link } from "wouter";
+import PaginationCustom from "../../../components/pagination-custom";
 
 export default function DBList() {
   return (
@@ -42,6 +43,16 @@ export default function DBList() {
         </Link>
       </div>
       <SeparatorCustom />
+      Here will be the list
+      <SeparatorCustom />
+      <div className="flex items-center justify-between">
+        <Button>
+          <User /> 15 Usuarios
+        </Button>
+        <PaginationCustom />
+        {/* <div>
+        </div> */}
+      </div>
     </>
   );
 }

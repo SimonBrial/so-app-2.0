@@ -3,8 +3,8 @@ import HeaderSection from "../../../components/header-section";
 import ContainerLayout from "../../../components/layout/container-layout";
 import SeparatorCustom from "../../../components/separator-custom";
 import { Route, Switch, useLocation } from "wouter";
-import DbCreatePage from "./create/db-create-page";
 import DBList from "./db-list";
+import DbCreatePage from "../create/db-create-page";
 
 export default function DBLayout() {
   const [location] = useLocation();
