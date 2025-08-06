@@ -6,7 +6,12 @@ import SeparatorCustom from "../../../components/separator-custom";
 export default function HomePage() {
   return (
     <ContainerLayout>
-      <HeaderSection icon={House} title="Home" titleSection="Dashboard" />
+      <HeaderSection
+        subTitle=""
+        icon={House}
+        title="Home"
+        titleSection="Dashboard"
+      />
       <SeparatorCustom />
     </ContainerLayout>
   );

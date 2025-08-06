@@ -7,7 +7,7 @@ import SeparatorCustom from "../../../components/separator-custom";
 export default function SettingsPage() {
   return (
     <ContainerLayout>
-      <HeaderSection icon={Bolt} title="Ajustes" titleSection="Perfil" />
+      <HeaderSection subTitle="" icon={Bolt} title="Ajustes" titleSection="Perfil" />
       <SeparatorCustom />
       <ModeToggle />
     </ContainerLayout>
