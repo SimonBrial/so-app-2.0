@@ -24,6 +24,12 @@
   --inset-shadow-custom: inset 4px 4px 4px -3px rgba(0, 0, 0, 0.25);
   --color-iconBackground: #d6dee0;
   --color-iconBackground-dark: #1f1f1f;
+  --color-instagram-fade: linear-gradient(
+    90deg,
+    rgba(250, 199, 93, 0.3) 0%,
+    rgba(253, 14, 120, 0.3) 50%,
+    rgba(45, 104, 221, 0.3) 100%
+  );
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

@@ -1,7 +1,14 @@
 import { Separator } from "./ui/separator";
 
-export default function SeparatorCustom() {
+export default function SeparatorCustom({
+  orientation,
+}: {
+  orientation?: "horizontal" | "vertical";
+}) {
   return (
-    <Separator className="my-2.5 bg-container-border dark:bg-container-border-dark" />
+    <Separator
+      orientation={orientation}
+      className="my-2.5 bg-container-border dark:bg-container-border-dark"
+    />
   );
 }

@@ -13,6 +13,7 @@ interface ThemeProviderState {
 
 interface IconNavbarProps {
   icon: React.ComponentType<{ className?: string }>;
+  active?: boolean;
   label: string;
   dir: string;
 }
@@ -27,4 +28,9 @@ interface HeaderSectionProps {
   fivethTitle?: string;
 }
 
-export type { ThemeProviderProps, ThemeProviderState, IconNavbarProps, HeaderSectionProps };
+interface IconProps {
+  width?: string | number;
+  height?: string | number;
+}
+
+export type { ThemeProviderProps, ThemeProviderState, IconNavbarProps, HeaderSectionProps, IconProps };
